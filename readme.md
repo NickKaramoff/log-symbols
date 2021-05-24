@@ -19,7 +19,7 @@ $ npm install @nickkaramoff/log-symbols
 ## Usage
 
 ```js
-const logSymbols = require('@nickkaramoff/log-symbolslog-symbols');
+const logSymbols = require('@nickkaramoff/log-symbols');
 
 console.log(logSymbols.success, 'Finished successfully!');
 // Terminals with Unicode support:     ✔ Finished successfully!
