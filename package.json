@@ -1,6 +1,6 @@
 {
 	"name": "@nickkaramoff/log-symbols",
-	"version": "4.1.0",
+	"version": "4.1.1",
 	"description": "Chalk-free colored symbols for various log levels. Example: `✔︎ Success`",
 	"license": "MIT",
 	"repository": "NickKaramoff/log-symbols",
