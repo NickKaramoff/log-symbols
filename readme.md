@@ -2,20 +2,24 @@
 
 <img src="screenshot.png" width="226" height="192" align="right">
 
-> Colored symbols for various log levels
+> Chalk-free colored symbols for various log levels
 
 Includes fallbacks for Windows CMD which only supports a [limited character set](https://en.wikipedia.org/wiki/Code_page_437).
+
+> ## HEADS UP!
+>
+> This is a fork of sindresorhus' [log-symbols](https://github.com/sindresorhus/log-symbols). This should act as a drop-in replacement for this module. The only change is that the `chalk` dependency is replaced with `colorette`.
 
 ## Install
 
 ```
-$ npm install log-symbols
+$ npm install @nickkaramoff/log-symbols
 ```
 
 ## Usage
 
 ```js
-const logSymbols = require('log-symbols');
+const logSymbols = require('@nickkaramoff/log-symbolslog-symbols');
 
 console.log(logSymbols.success, 'Finished successfully!');
 // Terminals with Unicode support:     ✔ Finished successfully!
@@ -38,14 +42,10 @@ console.log(logSymbols.success, 'Finished successfully!');
 - [log-symbols](https://github.com/palash25/log-symbols) - Ruby port
 - [guumaster/logsymbols](https://github.com/guumaster/logsymbols) - Golang port
 
----
+## Licence
 
-<div align="center">
-	<b>
-		<a href="https://tidelift.com/subscription/pkg/npm-log-symbols?utm_source=npm-log-symbols&utm_medium=referral&utm_campaign=readme">Get professional support for this package with a Tidelift subscription</a>
-	</b>
-	<br>
-	<sub>
-		Tidelift helps make open source sustainable for maintainers while giving companies<br>assurances about security, maintenance, and licensing for their dependencies.
-	</sub>
-</div>
+[MIT] © 2021 Nikita Karamov
+
+[MIT] © 2021 Sindre Sorhus
+
+[MIT]: https://spdx.org/licenses/MIT.html
