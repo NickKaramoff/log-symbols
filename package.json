@@ -48,5 +48,8 @@
 		"tsd": "^0.14.0",
 		"xo": "^0.38.2"
 	},
-	"browser": "browser.js"
+	"browser": "browser.js",
+	"publishConfig": {
+		"access": "public"
+	}
 }
