@@ -1,14 +1,14 @@
 {
-	"name": "log-symbols",
+	"name": "@nickkaramoff/log-symbols",
 	"version": "5.0.0",
-	"description": "Colored symbols for various log levels. Example: `✔︎ Success`",
+	"description": "Chalk-free colored symbols for various log levels. Example: `✔︎ Success`",
 	"license": "MIT",
-	"repository": "sindresorhus/log-symbols",
-	"funding": "https://github.com/sponsors/sindresorhus",
+	"repository": "NickKaramoff/log-symbols",
+	"funding": "https://github.com/sponsors/NickKaramoff",
 	"author": {
-		"name": "Sindre Sorhus",
-		"email": "sindresorhus@gmail.com",
-		"url": "https://sindresorhus.com"
+		"name": "Nikita Karamov",
+		"email": "nick@karamoff.dev",
+		"url": "https://karamoff.dev/"
 	},
 	"type": "module",
 	"exports": {
