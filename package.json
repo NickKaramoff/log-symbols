@@ -52,5 +52,8 @@
 		"strip-ansi": "^7.0.0",
 		"tsd": "^0.14.0",
 		"xo": "^0.38.2"
+	},
+	"publishConfig": {
+		"access": "public"
 	}
 }
