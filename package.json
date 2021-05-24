@@ -44,7 +44,7 @@
 		"stdout"
 	],
 	"dependencies": {
-		"chalk": "^4.1.0",
+		"colorette": "^1.2.2",
 		"is-unicode-supported": "^1.0.0"
 	},
 	"devDependencies": {
