@@ -19,7 +19,7 @@
 		"node": ">=12"
 	},
 	"scripts": {
-		"test": "xo && node test.js && check-dts"
+		"test": "xo && node test/index.test.js && check-dts"
 	},
 	"files": [
 		"index.js",
