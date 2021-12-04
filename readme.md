@@ -1,46 +1,43 @@
-# log-symbols
+# nanosymbols
 
 <img src="screenshot.png" width="226" height="192" align="right">
 
-> Chalk-free colored symbols for various log levels
+> Lightweight coloured symbols for various log levels
 
-Includes fallbacks for Windows CMD which only supports a [limited character set](https://en.wikipedia.org/wiki/Code_page_437).
+Includes fallbacks for Windows CMD which only supports a
+[limited character set](https://en.wikipedia.org/wiki/Code_page_437).
 
-> ## HEADS UP!
->
-> This is a fork of sindresorhus' [log-symbols](https://github.com/sindresorhus/log-symbols). This should act as a drop-in replacement for this module. The only change is that the `chalk` dependency is replaced with `picocolors`.
+This is a lightweight fork of @sindresorhus'
+[log-symbols](https://github.com/sindresorhus/log-symbols).
+This module should act as a drop-in replacement.
+
+Changes made:
+
+- `chalk` dependency is replaced with `picocolors`.
+- dev environment uses Prettier+ESLint, uvu, check-dts instead of XO, ava, tsd
 
 ## Install
 
-```
-$ npm install @nickkaramoff/log-symbols
+```sh
+npm install nanosymbols
 ```
 
 ## Usage
 
 ```js
-import logSymbols from "@nickkaramoff/log-symbols";
+import nanoSymbols from "nanosymbols";
 
-console.log(logSymbols.success, "Finished successfully!");
+console.log(nanoSymbols.success, "Finished successfully!");
 // Terminals with Unicode support:     ✔ Finished successfully!
 // Terminals without Unicode support:  √ Finished successfully!
 ```
 
-## API
-
-### logSymbols
-
-#### info
-
-#### success
-
-#### warning
-
-#### error
-
 ## Related
 
-- [figures](https://github.com/sindresorhus/figures) - Unicode symbols with Windows CMD fallbacks
+- [log-symbols](https://github.com/sindresorhus/log-symbols) - original, more
+  heavyweight version of this package
+- [figures](https://github.com/sindresorhus/figures) - Unicode symbols with
+  Windows CMD fallbacks
 - [py-log-symbols](https://github.com/ManrajGrover/py-log-symbols) - Python port
 - [log-symbols](https://github.com/palash25/log-symbols) - Ruby port
 - [guumaster/logsymbols](https://github.com/guumaster/logsymbols) - Golang port

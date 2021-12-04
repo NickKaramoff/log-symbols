@@ -15,6 +15,6 @@ const fallback = {
   error: pc.red("×"),
 };
 
-const logSymbols = isUnicodeSupported() ? main : fallback;
+const nanoSymbols = isUnicodeSupported() ? main : fallback;
 
-export default logSymbols;
+export default nanoSymbols;

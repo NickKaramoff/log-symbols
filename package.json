@@ -1,9 +1,9 @@
 {
-  "name": "@nickkaramoff/log-symbols",
+  "name": "nanosymbols",
   "version": "5.0.2",
-  "description": "Chalk-free colored symbols for various log levels. Example: `✔︎ Success`",
+  "description": "Lightweight coloured symbols for various log levels",
   "license": "MIT",
-  "repository": "NickKaramoff/log-symbols",
+  "repository": "NickKaramoff/nanosymbols",
   "funding": "https://github.com/sponsors/NickKaramoff",
   "author": {
     "name": "Nikita Karamov",

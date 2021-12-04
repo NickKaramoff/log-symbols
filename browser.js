@@ -1,7 +1,8 @@
+const nanoSymbols = {
   info: "ℹ️",
   success: "✅",
   warning: "⚠️",
   error: "❌️",
 };
 
-export default logSymbols;
+export default nanoSymbols;
