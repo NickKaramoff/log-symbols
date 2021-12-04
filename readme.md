@@ -19,9 +19,9 @@ $ npm install @nickkaramoff/log-symbols
 ## Usage
 
 ```js
-import logSymbols from '@nickkaramoff/log-symbols';
+import logSymbols from "@nickkaramoff/log-symbols";
 
-console.log(logSymbols.success, 'Finished successfully!');
+console.log(logSymbols.success, "Finished successfully!");
 // Terminals with Unicode support:     ✔ Finished successfully!
 // Terminals without Unicode support:  √ Finished successfully!
 ```
@@ -31,8 +31,11 @@ console.log(logSymbols.success, 'Finished successfully!');
 ### logSymbols
 
 #### info
+
 #### success
+
 #### warning
+
 #### error
 
 ## Related
@@ -48,4 +51,4 @@ console.log(logSymbols.success, 'Finished successfully!');
 
 [MIT] © 2021 Sindre Sorhus
 
-[MIT]: https://spdx.org/licenses/MIT.html
+[mit]: https://spdx.org/licenses/MIT.html

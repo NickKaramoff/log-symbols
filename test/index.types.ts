@@ -1,4 +1,4 @@
-import lib from '..';
+import lib from "..";
 
 console.log(lib.error);
 console.log(lib.info);
