@@ -1,4 +1,5 @@
-import test from 'ava';
+import {test} from 'uvu';
+import * as assert from 'uvu/assert'; // eslint-disable-line node/file-extension-in-import
 import stripAnsi from 'strip-ansi';
 import logSymbols from './index.js';
 
@@ -8,6 +9,9 @@ for (const [key, value] of Object.entries(logSymbols)) {
 
 console.log('');
 
-test('returns log symbols', t => {
-	t.true(stripAnsi(logSymbols.success) === '✔' || stripAnsi(logSymbols.success) === '√');
+test('returns log symbols', () => {
+	process.env.TERM = 'xterm-256color';
+	assert.ok(stripAnsi(logSymbols.success) === '✔' || stripAnsi(logSymbols.success) === '√');
 });
+
+test.run();
