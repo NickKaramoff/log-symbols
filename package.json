@@ -19,7 +19,7 @@
 		"node": ">=12"
 	},
 	"scripts": {
-		"test": "xo && node test.js && tsd"
+		"test": "xo && node test.js && check-dts"
 	},
 	"files": [
 		"index.js",
@@ -48,8 +48,8 @@
 		"picocolors": "^1.0.0"
 	},
 	"devDependencies": {
+		"check-dts": "^0.6.4",
 		"strip-ansi": "^7.0.0",
-		"tsd": "^0.14.0",
 		"uvu": "^0.5.2",
 		"xo": "^0.38.2"
 	},
