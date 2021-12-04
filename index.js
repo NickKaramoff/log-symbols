@@ -1,18 +1,18 @@
-import {blue, green, yellow, red} from 'colorette';
+import pc from 'picocolors';
 import isUnicodeSupported from 'is-unicode-supported';
 
 const main = {
-	info: blue('ℹ'),
-	success: green('✔'),
-	warning: yellow('⚠'),
-	error: red('✖')
+	info: pc.blue('ℹ'),
+	success: pc.green('✔'),
+	warning: pc.yellow('⚠'),
+	error: pc.red('✖')
 };
 
 const fallback = {
-	info: blue('i'),
-	success: green('√'),
-	warning: yellow('‼'),
-	error: red('×')
+	info: pc.blue('i'),
+	success: pc.green('√'),
+	warning: pc.yellow('‼'),
+	error: pc.red('×')
 };
 
 const logSymbols = isUnicodeSupported() ? main : fallback;

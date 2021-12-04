@@ -8,7 +8,7 @@ Includes fallbacks for Windows CMD which only supports a [limited character set]
 
 > ## HEADS UP!
 >
-> This is a fork of sindresorhus' [log-symbols](https://github.com/sindresorhus/log-symbols). This should act as a drop-in replacement for this module. The only change is that the `chalk` dependency is replaced with `colorette`.
+> This is a fork of sindresorhus' [log-symbols](https://github.com/sindresorhus/log-symbols). This should act as a drop-in replacement for this module. The only change is that the `chalk` dependency is replaced with `picocolors`.
 
 ## Install
 
