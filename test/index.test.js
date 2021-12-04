@@ -1,20 +1,20 @@
-import pc from "picocolors";
-import isUnicodeSupported from "is-unicode-supported";
+import { test } from "uvu";
+import * as assert from "uvu/assert";
+import stripAnsi from "strip-ansi";
+import nanoSymbols from "../index.js";
 
-const main = {
-	info: pc.blue("ℹ"),
-	success: pc.green("✔"),
-	warning: pc.yellow("⚠"),
-	error: pc.red("✖"),
-};
+for (const [key, value] of Object.entries(nanoSymbols)) {
+	console.log(value, key);
+}
 
-const fallback = {
-	info: pc.blue("i"),
-	success: pc.green("√"),
-	warning: pc.yellow("‼"),
-	error: pc.red("×"),
-};
+console.log("");
 
-const logSymbols = isUnicodeSupported() ? main : fallback;
+test("returns log symbols", () => {
+	process.env.TERM = "xterm-256color";
+	assert.ok(
+		stripAnsi(nanoSymbols.success) === "✔" ||
+			stripAnsi(nanoSymbols.success) === "√"
+	);
+});
 
-export default logSymbols;
+test.run();
