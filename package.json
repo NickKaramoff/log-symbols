@@ -15,7 +15,7 @@
     "node": ">=12"
   },
   "scripts": {
-    "test": "prettier --check . && eslint . && node test/index.test.js && check-dts"
+    "test": "prettier --check . && eslint . && uvu && check-dts"
   },
   "files": [
     "index.js",
@@ -49,7 +49,6 @@
     "eslint-config-xo": "^0.39.0",
     "eslint-plugin-unicorn": "^39.0.0",
     "prettier": "^2.5.1",
-    "strip-ansi": "^7.0.0",
     "typescript": "^4.5.2",
     "uvu": "^0.5.2"
   },
