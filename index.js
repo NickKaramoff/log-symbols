@@ -1,8 +1,5 @@
 import pc from "picocolors";
 
-//
-// https://github.com/sindresorhus/is-unicode-supported/blob/f0c2c97ee97160b56d9143c24ac8ac18aef10b7d/index.js
-
 /**
  * Detects whether the terminal supports Unicode.
  *
