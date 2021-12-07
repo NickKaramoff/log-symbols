@@ -1,6 +1,6 @@
 {
   "name": "nanosymbols",
-  "version": "5.1.1",
+  "version": "5.1.2",
   "description": "Lightweight coloured symbols for various log levels",
   "license": "MIT",
   "repository": "https://codeberg.org/kytta/nanosymbols",
