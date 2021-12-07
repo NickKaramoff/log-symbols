@@ -3,13 +3,9 @@
   "version": "5.1.1",
   "description": "Lightweight coloured symbols for various log levels",
   "license": "MIT",
-  "repository": "NickKaramoff/nanosymbols",
+  "repository": "https://codeberg.org/kytta/nanosymbols",
   "funding": "https://github.com/sponsors/NickKaramoff",
-  "author": {
-    "name": "Nikita Karamov",
-    "email": "me@kytta.dev",
-    "url": "https://www.kytta.dev/"
-  },
+  "author": "Nikita Karamov <me@kytta.dev> (https://www.kytta.dev/)",
   "type": "module",
   "exports": {
     "node": "./index.js",
