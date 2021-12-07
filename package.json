@@ -3,8 +3,10 @@
   "version": "5.1.2",
   "description": "Lightweight coloured symbols for various log levels",
   "license": "MIT",
+  "homepage": "https://codeberg.org/kytta/nanosymbols",
   "repository": "https://codeberg.org/kytta/nanosymbols",
-  "funding": "https://github.com/sponsors/NickKaramoff",
+  "bugs": "https://codeberg.org/kytta/nanosymbols/issues",
+  "funding": "https://liberapay.com/kytta",
   "author": "Nikita Karamov <me@kytta.dev> (https://www.kytta.dev/)",
   "type": "module",
   "exports": {
@@ -23,21 +25,12 @@
     "browser.js"
   ],
   "keywords": [
-    "unicode",
-    "cli",
-    "cmd",
-    "command-line",
     "characters",
-    "symbol",
     "symbols",
-    "figure",
     "figures",
-    "fallback",
-    "windows",
-    "log",
-    "logging",
     "terminal",
-    "stdout"
+    "cli",
+    "logging"
   ],
   "dependencies": {
     "picocolors": "^1.0.0"
