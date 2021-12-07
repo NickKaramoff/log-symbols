@@ -15,7 +15,7 @@
     "node": ">=12"
   },
   "scripts": {
-    "test": "prettier --check . && eslint . && uvu && check-dts"
+    "test": "prettier --check . && eslint . && uvu"
   },
   "files": [
     "index.js",
@@ -43,13 +43,11 @@
     "picocolors": "^1.0.0"
   },
   "devDependencies": {
-    "check-dts": "^0.6.4",
     "eslint": "^8.4.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-xo": "^0.39.0",
     "eslint-plugin-unicorn": "^39.0.0",
     "prettier": "^2.5.1",
-    "typescript": "^4.5.2",
     "uvu": "^0.5.2"
   },
   "publishConfig": {
