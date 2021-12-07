@@ -1,20 +1,34 @@
 # nanosymbols
 
-<img src="screenshot.png" width="226" height="192" align="right">
+<img src="screenshot.png" width="200" height="170" align="right">
 
 > Lightweight coloured symbols for various log levels
+
+```js
+import nanoSymbols from "nanosymbols";
+
+// if Unicode supported => ℹ, ✔, ⚠, ✖
+// otherwise            => i, √, ‼, ×
+console.log(
+  nanoSymbols.info,
+  nanoSymbols.success,
+  nanoSymbols.warning,
+  nanoSymbols.error,
+);
+```
 
 Includes fallbacks for Windows CMD which only supports a
 [limited character set](https://en.wikipedia.org/wiki/Code_page_437).
 
-This is a lightweight fork of @sindresorhus'
-[log-symbols](https://github.com/sindresorhus/log-symbols).
-This module should act as a drop-in replacement.
+Use this (instead of the original
+[`log-symbols`](https://github.com/sindresorhus/log-symbols)
+by [Sindre Sorhus](https://github.com/sindresorhus)), if:
 
-Changes made:
-
-- `chalk` dependency is replaced with `picocolors`.
-- dev environment uses Prettier+ESLint, uvu, check-dts instead of XO, ava, tsd
+- you care for smaller install size (~~50 kB~~ 12 kB)
+- you only use `picocolors`-based dev tools (PostCSS, Stylelint, SVGO, ...)
+  - or you don't have any terminal colouring libraries at all
+- you want a faster, lighter, and more pleasant dev experience
+  (~~220 MB~~ 114 MB in `node_modules`, takes ~~22 sec~~ 8 sec to install)
 
 ## Install
 
@@ -22,20 +36,10 @@ Changes made:
 npm install nanosymbols
 ```
 
-## Usage
-
-```js
-import nanoSymbols from "nanosymbols";
-
-console.log(nanoSymbols.success, "Finished successfully!");
-// Terminals with Unicode support:     ✔ Finished successfully!
-// Terminals without Unicode support:  √ Finished successfully!
-```
-
 ## Related
 
-- [log-symbols](https://github.com/sindresorhus/log-symbols) - original, more
-  heavyweight version of this package
+- [log-symbols](https://github.com/sindresorhus/log-symbols) - original version
+  of this package
 - [figures](https://github.com/sindresorhus/figures) - Unicode symbols with
   Windows CMD fallbacks
 - [py-log-symbols](https://github.com/ManrajGrover/py-log-symbols) - Python port
