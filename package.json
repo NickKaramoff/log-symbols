@@ -10,6 +10,7 @@
   "author": "Nikita Karamov <me@kytta.dev> (https://www.kytta.dev/)",
   "type": "module",
   "exports": {
+    "types": "./index.d.ts",
     "node": "./index.js",
     "default": "./browser.js"
   },
