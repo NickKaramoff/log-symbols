@@ -13,7 +13,7 @@ console.log(
   nanoSymbols.info,
   nanoSymbols.success,
   nanoSymbols.warning,
-  nanoSymbols.error
+  nanoSymbols.error,
 );
 ```
 

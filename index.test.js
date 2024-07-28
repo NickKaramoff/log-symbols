@@ -10,7 +10,7 @@ console.log();
 
 test("returns log symbols", () => {
   assert.ok(
-    nanoSymbols.success.includes("✔") || nanoSymbols.success.includes("√")
+    nanoSymbols.success.includes("✔") || nanoSymbols.success.includes("√"),
   );
 });
 
